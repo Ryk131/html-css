@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <picture>
+        <source media="(max-width:550px)" srcset="law-p.jpg" type="image/jpeg">
+        <source media="(max-width:1050px)" srcset="law-m.jpg" type="image/jpeg">
+        <img src="law-g.jpg" alt="Imagem Flexível">
+    </picture>
+    <!--
+        USANDO O MIN-WIDTH:
+        <picture>
+            <source media="(min-width:1050px)" srcset="law-g.jpg" type="image/jpeg">
+            <source media="(min-width:750px)" srcset="law-m.jpg" type="image/jpeg">
+            <img src="law-p.jpg" alt="Imagem Flexível">
+        </picture>
+    -->
+    <h1>Audios</h1>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="midia/ccb-hinos-tocados-orquestrados-hinario-04 (1).mp3" type="audio/mp3">
+    </audio>
+    
+</body>
+</html>
